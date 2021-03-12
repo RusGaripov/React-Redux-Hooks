@@ -23,8 +23,6 @@ export default (state = initialState, action) => {
         weather: {},
         error: action.payload,
       };
-    case actions.GET_ONE:
-      return { ...state, one: action.one };
     case actions.DELETE_NEWS:
       return { ...state, one: null };
     default:
